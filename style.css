@@ -47,3 +47,50 @@ p {
 }
 
 /*end of css rest*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Light-grayish-cyan);
+    font-family: "Space Mono", serif;
+}
+
+.container {
+    max-width: 23.438rem;
+    background-color: var(--White);
+    border-radius: 0.938rem;
+}
+
+.white-side {
+    padding: 25px;
+}
+
+p {
+    font-size: 13px;
+    color: var(--Dark-grayish-cyan);
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.input-container {
+    position: relative;
+}
+
+
+.bill-input {
+    width: 90%;
+    background-color: var(--Very-light-grayish-cyan);
+    position: relative;
+    border: 1px solid var(--Very-light-grayish-cyan);
+    border-radius: 0.313rem;
+    padding: 0.375rem 1rem 0.375rem 0.375rem;
+    padding-right: 2rem;
+}
+
+.icon-dollar {
+    position: absolute;
+    transform: translate(1rem, -1.625rem);
+    width: 0.563rem;
+}
