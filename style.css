@@ -71,6 +71,7 @@ h1 {
     letter-spacing: 0.5rem;
     font-weight: 600;
     margin-bottom: 1.875rem;
+    opacity: 0.8;
 
 }
 
@@ -178,7 +179,7 @@ p {
 .blue-side {
     background-color: var(--Very-dark-cyan);
     padding: 2.125rem 1.313rem 1.563rem 1.313rem;
-    border: 1ps solid var(--Very-dark-cyan);
+    border: 1px solid var(--Very-dark-cyan);
     border-radius: 0.625rem;
 }
 
@@ -226,4 +227,49 @@ p {
 .btn-rest:hover {
     transform: scale(1.01);
     color: var(--White);
+}
+
+@media only screen and (min-width:59.25rem) {
+
+    .container {
+        max-width: 79.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 12px 8px;
+    }
+
+    .white-side {
+        padding: 32px;
+    }
+
+    .Select-tips {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .blue-side {
+        margin: 10px 15px;
+        padding: 2.375rem 1.75rem 1.563rem 2rem;
+    }
+
+    .tip-section {
+        margin-bottom: 2.25rem;
+    }
+
+    .input-container, .input-container-two {
+        width: 83%;
+    } 
+
+    .value {
+        font-size: 2.445rem;
+    }
+
+    .btn-rest {
+        margin-top: 4.125rem;
+    }
+
+    h1 {
+        margin-bottom: 2.875rem;
+    }
+    
 }
