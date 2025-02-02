@@ -13,7 +13,7 @@
       <p>Bill</p>
       <form>
        <div class="input-container">
-        <input type="text" class="input" required/>
+        <input type="text" class="input" required id="billInput"/>
         <img src="images/icon-dollar.svg" alt="icon-dollar" class="icon-dollar" />
         </div>
       </form>
@@ -24,12 +24,12 @@
       <button class="btn">15%</button>
       <button class="btn">25%</button>
       <button class="btn">50%</button> 
-      <button class="btn-custom">Custom</button>
+      <button class="btn-custom" id="custom"><input class="input-costom" id="inputCostom"/>custom</button>
      </div>
       <p>Number of People</p>
       <form>
        <div class="input-container-two">
-        <input type="text" class="input" required/>
+        <input type="text" class="input" required id="peopleInput"/>
         <img src="images/icon-person.svg" alt="icon-person" class="icon-person" />
        </div>
       </form>
@@ -40,17 +40,18 @@
          <div class="lable tip-amount">Tip Amount</div>
          <div class="lable-two">/ person</div>
         </div>
-        <div class="value">$4.27</div>
+        <div class="value" id="firstTip">$4.27</div>
       </div>
       <div class="tip-section">
         <div class="flex-col">
           <div class="lable">Total</div>
           <div class="lable-two">/ person</div>
          </div>
-         <div class="value">$32.79</div>
+         <div class="value" id="secondTip">$32.79</div>
        </div>
-      <button class="btn-rest">REST</button>
+      <button class="btn-rest" id="rest">REST</button>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>

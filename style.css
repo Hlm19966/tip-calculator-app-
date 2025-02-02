@@ -166,12 +166,33 @@ p {
     background-color: var(--Very-light-grayish-cyan);
     border: 1px solid var(--Very-light-grayish-cyan);
     color: var(--Dark-grayish-cyan);
+    display: block;
+    position: relative;
 }
 
 .btn-custom:hover {
     transform: scale(1.1);
     color: var(--Very-dark-cyan);
-    background-color: var(--Strong-cyan);
+}
+
+.input-costom {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    border-radius: 0.438rem;
+    font-size: 1.188rem;
+    font-weight: 700;
+    background-color: var(--Very-light-grayish-cyan);
+    border: 1px solid var(--Very-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+
+
+.input-custom:focus {
+    border: 1px solid var(--Very-light-grayish-cyan);
+    outline: none;
 }
 
 /*blueside*/
@@ -270,6 +291,10 @@ p {
 
     h1 {
         margin-bottom: 2.875rem;
+    }
+
+    .input-costom {
+        width: 71px;
     }
     
 }
